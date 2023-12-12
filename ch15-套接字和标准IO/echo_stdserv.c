@@ -53,6 +53,8 @@ int main(int argc, char* argv[])
             fgets(buf, BUF_SIZE, readfp);
             fputs(buf, writefp);
             fflush(writefp);
+            // 标准I/O函数为了提高性能，内部提供额外的缓冲。
+            // 若不调用fflush函数则无法保证立即将数据传输到客户端
         }
 
         fclose(readfp);

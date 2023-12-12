@@ -2,7 +2,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 
-#define BUF_SIZE 30
+#define BUF_SIZE 3 // 用最短数组长度构成
 
 int main(int argc, char* argv[])
 {
