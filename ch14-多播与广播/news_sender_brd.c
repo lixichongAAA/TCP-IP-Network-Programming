@@ -28,8 +28,11 @@ int main(int argc, char *argv[])
     broad_adr.sin_addr.s_addr = inet_addr(argv[1]);
     broad_adr.sin_port = htons(atoi(argv[2]));
 
-    setsockopt(send_sock, SOL_SOCKET,
+    int state = setsockopt(send_sock, SOL_SOCKET,
                SO_BROADCAST, (void *)&so_brd, sizeof(so_brd));
+    if(state == -1)
+        error_handling("setsockopt() error");
+    
     if ((fp = fopen("news.txt", "r")) == NULL)
         error_handling("fopen() error");
 
