@@ -43,10 +43,3 @@ int main(int argc, char *argv[])
 	fclose(readfp);
 	return 0;
 }
-
-/*
-swyoon@my_linux:~/tcpip$ gcc sep_serv2.c -o serv2
-swyoon@my_linux:~/tcpip$ ./serv2 9190
-FROM CLIENT: Thank you! 
-*/
-
