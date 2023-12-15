@@ -175,7 +175,7 @@ Newwork ordered integer addr: 0xdeea7c7b
 
 ```c
 #include <arpa/inet.h>
-char *inet_aton(struct in_addr adr)
+char *inet_ntoa(struct in_addr adr)
 // 成功时返回字符串地址，失败时返回-1
 ```
 
