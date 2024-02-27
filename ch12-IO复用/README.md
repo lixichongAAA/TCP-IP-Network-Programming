@@ -187,8 +187,7 @@ Message from server: qwe
 
 q
 
-lxc@Lxc:~/C/tcpip_src/ch12-IO复用$ bin/echo_mpclient 127.
-0.0.1 9999
+lxc@Lxc:~/C/tcpip_src/ch12-IO复用$ bin/echo_mpclient 127.0.0.1 9999
 123
 Message from server: 123
 
